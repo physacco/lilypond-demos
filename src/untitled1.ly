@@ -8,21 +8,29 @@ upper = \relative c'' {
   \clef treble
   \tempo 4 = 75
 
-  g8 a ais4 g8 d' c4 | f8 g d2. |
-  g,8 a ais4 g8 d' c4 | f8 g d2. | \break
+  d8 e f4 d8 a' g4 | c8 d a2. |
+  d,8 e f4 d8 a' g4 | c8 d a2. | \break
 
-  c8 d dis4 g8 a4.~ | a8 ais,4 g'8 a2 |
-  g,8 a ais4 g8 d' c4 | a8 f g2. | \break
+  g8 a ais4 d8 e4.~ | e8 f,4 d'8 e2 |
+  d,8 e f4 d8 a' g4 | e8 c d2. | \break
 }
 
-lower = \relative c'' {
+lower = \relative c' {
+  \clef treble
+  \tempo 4 = 75
+
+  <f a c>2 <f a c> | <c' e g>1 |
+  <f, a c>2 <f a c> | <c' e g>1 | \break
+
+  <b d f>2  <d f a> | r8 <a c e>2.. |
+  <f a c>2 <f a c> | <g b d>1 | \break
 }
 
 \score {
   \new PianoStaff <<
     \set PianoStaff.instrumentName = #"Piano "
     \new Staff = "upper" \upper
-    %\new Staff = "lower" \lower
+    \new Staff = "lower" \lower
   >>
   \layout { }
   \midi { }
