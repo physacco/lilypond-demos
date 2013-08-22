@@ -88,13 +88,90 @@ upper = \relative c'' {
 }
 
 lower = \relative c'' {
+  \clef treble
+  \key aes \major
+
+  <f, aes c>4. ees'4.~ ees4 |
+  r1 |
+  <g, c>4. ees'4.~ ees4 |
+  r1 | \break
+
+  % 5
+  <aes, des>4. ees'4.~ ees4 |
+  <g, bes>4. ees'4.~ ees4 |
+  <f, aes c>4. <ees'~ bes'~>8 <ees bes'>4 aes |
+  <g, c e g>4. c8 des c~ c4 | \break
+
+  % 9
+  <f, aes c>4. ees'2 bes8 |
+  c8 des ees c~ c2 |
+  <c~ g'~ bes~>2. <c g' bes>8 bes |
+  c8 des ees c~ c2 | \break
+
+  % 13
+  <aes des f>4. ees'4. des4 |
+  ees,8 bes' c g'~ g4 bes |
+  f,4. <f' aes>4 <ees g> <bes~ ees~>8 |
+  <bes ees>4 <f a c>2. |
+  <des f aes c>1 | \break
+
+  % 18
+  <ees g bes c>1 |
+  <c g'>1 |
+  <f c' ees>4. <f~ c'~>8 <f c'>2 |
+  <des f aes c>1 |
+  <ees g bes ees>1 | \break
+
+  % 23
+  <c f>8 g' aes ees'~ ees2 |
+  <c, f g>8 bes' c g'~ g2 |
+  <des, f aes c>4. f'8~ f2 |
+  <ees, f g bes>4. ees'8~ ees2 |
+  <c, g' bes>4. c'8~ c2 | \break
+
+  % 28
+  <f, aes c ees>4. <f~ ees'>8 <f ees'>2 |
+  ges,8 des' f bes~ bes c4 des8~ |
+  des2 r |
+  r1 |
+  r1 | \break
+
+  % 33
+  <f, aes c>4. ees'4.~ ees4 |
+  r1 |
+  <g, bes c>4. ees'4.~ ees4 |
+  r1 |
+  <aes, des>4. ees'4.~ ees4 | \break
+
+  % 38
+  <g, bes>4. ees'4.~ ees4 |
+  <f, aes c>4. <ees'~ bes'~>8 <ees~ bes'>4 aes |
+  <g, c e g>4. c,8 des c~ c4 |
+  <f aes c>4. ees'2 bes8 | \break
+
+  % 42
+  c8 des ees c~ c2 |
+  <c~ g'~ bes~>2. <c g' bes>8 bes |
+  c8 des ees c~ c2 |
+  <aes des f>4. ees'4. des4 | \break
+
+  % 46
+  ees,8 bes' c g'~ g4 bes |
+  <f, c' f>2 r |
+  <ees bes' ees>2 r |
+  <des aes'>8 c' ees f r2 |
+  r1 |
+
+  % 51
+  r1 |
+  r1 \bar "|."
 }
 
 \score {
   \new PianoStaff <<
     \set PianoStaff.instrumentName = #"Piano "
     \new Staff = "upper" \upper
-    %\new Staff = "lower" \lower
+    \new Staff = "lower" \lower
   >>
   \layout { }
   \midi { }
