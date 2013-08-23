@@ -6,12 +6,13 @@
 
 upper = \relative c'' {
   \clef treble
+  \key f \major
   \tempo 4 = 75
 
   d8 e f4 d8 a' g4 | c8 d a2. |
   d,8 e f4 d8 a' g4 | c8 d a2. | \break
 
-  g8 a ais4 d8 e4.~ | e8 f,4 d'8 e2 |
+  g8 a bes4 d8 e4.~ | e8 f,4 d'8 e2 |
   d,8 e f4 d8 a' g4 | e8 c d2. | \break
 }
 
