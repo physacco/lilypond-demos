@@ -16,15 +16,16 @@ upper = \relative c'' {
   d,8 e f4 d8 a' g4 | e8 c d2. | \break
 }
 
-lower = \relative c' {
-  \clef treble
+lower = \relative c {
+  \clef bass
+  \key f \major
   \tempo 4 = 75
 
-  <f a c>2 <f a c> | <c' e g>1 |
-  <f, a c>2 <f a c> | <c' e g>1 | \break
+  <d f a>2 <d f a> | <f a c>2 g8 a r4 |
+  <d, f a>2 <d f a> | <f a c>2 bes8 c r4 | \break
 
-  <b d f>2  <d f a> | r8 <a c e>2.. |
-  <f a c>2 <f a c> | <g b d>1 | \break
+  <g bes d>2 <a c e> | r8 <a, c e>4. <c e g>2 |
+  <d f a>2 <d f a> | <c e g>1 | \break
 }
 
 \score {
