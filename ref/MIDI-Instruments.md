@@ -65,7 +65,7 @@
     43     contrabass                   低音大提琴
     44     tremolo strings              颤弓弦乐
     45     pizzicato strings            弹拨弦乐
-    46     orchestral harp              竖琴
+    46     orchestral strings           竖琴
     47     timpani                      定音鼓
 
 ### 合奏（Ensemble）
@@ -231,3 +231,5 @@
 ## 参考
 
 - <https://zh.wikipedia.org/wiki/General_MIDI>
+- <http://lilypond.org/doc/v2.14/Documentation/notation/midi-instruments>
+- /usr/share/lilypond/2.12.3/scm/midi.scm
