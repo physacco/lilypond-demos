@@ -34,3 +34,7 @@ lower = \relative c {
   \layout { }
   \midi { }
 }
+
+% Refer to:
+% http://en.wikipedia.org/wiki/File:Twelve_bar_boogie-woogie_blues_in_C.png
+% http://commons.wikimedia.org/wiki/File:Twelve_bar_boogie-woogie_blues_in_C.mid
